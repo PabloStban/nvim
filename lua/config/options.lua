@@ -14,6 +14,10 @@ vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
 
 local opt = vim.opt
 
+-- Agregados
+opt.textwidth = 0 -- Cambia 80 al ancho que desees
+opt.wrap = true -- Hace que el texto se adapte al size de la terminal
+-- Original
 opt.autowrite = true -- Enable auto write
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.completeopt = "menu,menuone,noselect"
