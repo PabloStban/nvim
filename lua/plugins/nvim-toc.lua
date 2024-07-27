@@ -11,7 +11,7 @@ return {
         toc_header = "Table of Contents",
       })
 
-      --require("nvim-toc").generate_md_toc("list")
+      require("nvim-toc").generate_md_toc("list")
       --require("nvim-toc").generate_md_toc("numbered")
     end,
   },

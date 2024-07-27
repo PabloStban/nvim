@@ -140,7 +140,11 @@ function compilar()
   end
 end
 
+function flotante()
+  cmd([[ToggleTerm direction='float']])
+end
+
+vim.cmd([[command Flotante lua flotante]])
+
 vim.cmd([[command Compilar lua compilar()]])
 vim.g.mkdp_path = "/home/pablo/.nvm/versions/node/v14.21.3/bin/node" -- Reemplaza '/ruta/a/tu/ejecutable/node' con la ruta correcta a tu ejecutable de Node.js
-
--- Markdown
